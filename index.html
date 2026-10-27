@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Inventario Express</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#7ADBA8">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap">
 <style>
 :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
@@ -351,6 +357,7 @@ var tx=0,ty=0,order=['home','inv','sales','debts'];
 document.addEventListener('touchstart',function(e){var t=e.touches[0];tx=t.clientX;ty=t.clientY},{passive:true});
 document.addEventListener('touchend',function(e){if(document.querySelector('.ov')||e.target.closest('input,select,textarea,.chips,video'))return;var t=e.changedTouches[0],dx=t.clientX-tx,dy=t.clientY-ty;if(Math.abs(dx)<70||Math.abs(dy)>Math.abs(dx)*.6)return;var i=order.indexOf(tab)+(dx<0?1:-1);if(i>=0&&i<order.length){tab=order[i];render();window.scrollTo(0,0);anim(dx<0?1:-1)}},{passive:true});
 render();alerts();
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}
 })();
 </script>
 </body>
