@@ -1,8 +1,11 @@
 [{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "com.inventarioexpress",
-        "sha256_cert_fingerprints": ["F3:8C:5A:32:DF:5D:6B:DD:34:AB:A0:4F:64:49:49:B3:C1:B0:F6:2C:A9:5F:5C:C7:DC:0E:C3:CE:55:F2:C1:29"]
-      }
-    }]
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.inventarioexpress",
+    "sha256_cert_fingerprints": [
+      "5F:F9:09:37:DA:14:AE:3D:C4:D3:F6:2D:71:C9:45:67:29:8D:61:00:5D:18:18:3A:53:B3:09:8C:FA:54:17:1E",
+      "F3:8C:5A:32:DF:5D:6B:DD:34:AB:A0:4F:64:49:49:B3:C1:B0:F6:2C:A9:5F:5C:C7:DC:0E:C3:CE:55:F2:C1:29"
+    ]
+  }
+}]
