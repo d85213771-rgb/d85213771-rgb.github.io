@@ -1,0 +1,8 @@
+/[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.inventarioexpress",
+        "sha256_cert_fingerprints": ["F3:8C:5A:32:DF:5D:6B:DD:34:AB:A0:4F:64:49:49:B3:C1:B0:F6:2C:A9:5F:5C:C7:DC:0E:C3:CE:55:F2:C1:29"]
+      }
+    }]
